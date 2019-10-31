@@ -7,6 +7,11 @@
     "url": "git+https://github.com/DaProclaima/chatbot.git"
   },
   "author": "Sébastien NOBOUR",
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "dist": "webpack --mode production --progress --profile",
+    "lint": "eslint ."
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/DaProclaima/chatbot/issues"
@@ -29,5 +34,8 @@
     "webpack": "4.41.2",
     "webpack-cli": "3.3.10",
     "webpack-dev-server": "3.9.0"
+  },
+  "dependencies": {
+    "fsevents": "^2.1.1"
   }
 }
