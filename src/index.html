@@ -12,72 +12,95 @@
 </head>
 
 <body>
+<!--        The app-->
   <div id="app" >
 
+<!--        The page-->
     <div class="container-fluid pt-1 main">
+
+<!--        Row for sidebar and row right part-->
       <div class="row px-1 mx-1 ">
+<!--        Sidebar-->
         <nav class="sidebar col-sm-12 col-md-12 col-lg-3 mr-lg-2 bg-light">
-      <span class="">ChatBot</span>
-      <p>v0.0.1</p>
-      <ul class="notification-list nav flex-column">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">
-            <i class="far fa-times-circle fa-2x notification-delete"></i>
-            <span>New</span>
-            <span class="dot notification-undread-count"></span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">
-            <i class="far fa-times-circle fa-2x notification-delete"></i>
-            <span>New</span>
-            <span class="dot notification-undread-count"></span>
-          </a>
-        </li>
-      </ul>
-    </nav>
+          <span class="">ChatBot</span>
+          <p>v0.0.1</p>
+          <ul class="notification-list nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <i class="far fa-times-circle fa-2x notification-delete"></i>
+                <span>New</span>
+                <span class="dot notification-undread-count"></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <i class="far fa-times-circle fa-2x notification-delete"></i>
+                <span>New</span>
+                <span class="dot notification-undread-count"></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+<!--        End of sidebar-->
+
+<!--        Right block-->
         <div class="col-sm-12 col-md-12 col-lg-8">
+
+<!--        Row for messages and form-->
           <div class="row">
-            <div class="col-12 p-auto">
-                <div class="row my-1">
-                  <table class="table table-borderless bg-light col-12">
-                    <tbody>
-                    <tr>
-                      <th scope="row"></th>
-                      <td>Otto</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <th scope="row"></th>
-                      <td>Otto</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <th scope="row"></th>
-                      <td>Otto</td>
-                      <td>@mdo</td>
-                    </tr>
-                    </tbody>
-                  </table>
-                  <div class = "col-12">
-                    <form>
-                      <div class="row form-group form-check col-12 mr-4">
-                        <div class="col-sm-12 col-md-12 col-lg-9 mr-lg-1 mg-sm-auto form-group">
-                          <label for="messageArea">Enter message</label>
-                          <textarea class="form-control" id="messageArea" rows="3"></textarea>
-                        </div>
-                          <button type="submit" class="col-sm-12 col-md-12 col-lg-2 mg-sm-auto inline-block btn btn-primary" onclick="send()">Send</button>
-                      </div>
-                    </form>
-                  </div>
+<!--        Messages block-->
+            <div class="col-12 my-1">
+<!--        Row for table      -->
+              <div class="row">
+                <table class="table table-borderless bg-light col-12">
+                <tbody>
+                <tr>
+                  <th scope="row"></th>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                </tbody>
+              </table>
+              </div>
+<!--        End of row for table-->
+            </div>
+<!--        End of messages block-->
+
+<!--        Form block-->
+            <div class = "col-12">
+            <form class="form-inline">
+              <div class="row form-group">
+                <div class="col-sm-12 col-md-12 col-lg-9 mr-lg-1 m-sm-auto mx-sm-3 mb-2 form-item">
+                  <label class="text-center" for="messageArea">Enter message</label>
+                  <textarea class="form-control-lg" id="messageArea"></textarea>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-2 m-sm-auto mx-sm-3 mb-2">
+                  <button type="submit" class="btn btn-primary" onclick="send()">Send</button>
                 </div>
               </div>
-            </div>
+            </form>
           </div>
+<!--        End of form block-->
+          </div>
+<!--        End of row for messages and form blocks  -->
         </div>
+<!--        End of right block-->
+        </div>
+<!--        End of row for sidebar and right part-->
       </div>
+<!--        End of page-->
     </div>
-  </div>
+<!--        end of the app-->
 </body>
 <script type="text/javascript" src="index.js"></script>
 </html>
