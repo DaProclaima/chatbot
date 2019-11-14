@@ -1,7 +1,9 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
-
+const OptimizedCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin');
+const { CleanWebpackPlugin }= require('clean-webpack-plugin');
 module.exports = {
+  stats: { children: false },
   entry: './src/index.js',
   output: {
     filename: 'src/[name].[hash].js',
@@ -26,6 +28,13 @@ module.exports = {
           }
         ]
       },
+      // {
+      //   test: /\.css$/,
+      //   use: [
+      //     'style-loader',
+      //     'sass-loader',
+      //   ]
+      // },
       {
         test: /\.s[ac]ss$/i,
         use: ['style-loader','css-loader','sass-loader']
@@ -38,7 +47,9 @@ module.exports = {
       template: path.resolve(__dirname, 'src/index.html'),
       filename: 'index.html',
       inject: 'body'
-    })
+    }),
+    new CleanWebpackPlugin(),
+
   ],
   devServer: {
     host: '127.0.0.1',

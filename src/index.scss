@@ -1,5 +1,27 @@
-#app {
-  h1 {
-    color: red;
-  }
+//Style reset
+body,html{
+  height: 100%;
+  width:100%;
+  margin: 0;
+  color: #222222;
+}
+
+//#app {
+//
+//}
+
+.notification-count-circle {
+  height: 100px;
+  width: 100px;
+  background-color: #4dbb64;
+  border-radius: 10%;
+  display: inline-block;
+}
+.notification-list {
+  list-style-type: none;
+}
+
+.main > *{
+  //padding: .8rem;
+  height: 100vh;
 }
