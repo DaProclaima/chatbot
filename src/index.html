@@ -1,102 +1,253 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--  <title>ChatBot v0.0.1</title>-->
+<!--  <meta charset="utf-8">-->
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--  -->
+<!--  &lt;!&ndash;  Bootstrap&ndash;&gt;-->
+<!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
+<!--  &lt;!&ndash;  Font Awesome&ndash;&gt;-->
+<!--  <script src="https://kit.fontawesome.com/da9cf94c08.js" crossorigin="anonymous"></script>-->
+<!--</head>-->
+
+<!--<body>-->
+<!--&lt;!&ndash;        The app&ndash;&gt;-->
+<!--  <div id="app" >-->
+
+<!--&lt;!&ndash;        The page&ndash;&gt;-->
+<!--    <div class="container-fluid pt-1 main">-->
+
+<!--&lt;!&ndash;        Row for sidebar and row right part&ndash;&gt;-->
+<!--      <div class="row px-1 mx-1 ">-->
+<!--&lt;!&ndash;        Sidebar&ndash;&gt;-->
+<!--        <nav class="sidebar col-sm-12 col-md-12 col-lg-3 mr-lg-2 bg-light">-->
+<!--          <span class="display-4">ChatBot</span>-->
+<!--          <p class="h4">v0.0.1</p>-->
+<!--          <ul class="notification-list nav flex-column">-->
+<!--            <li class="nav-item">-->
+<!--              <a class="nav-link active" href="#">-->
+<!--                <i class="far fa-times-circle fa-2x notification-delete" ></i>-->
+<!--                <span>New</span>-->
+<!--                <span class="dot notification-undread-count"></span>-->
+<!--              </a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--              <a class="nav-link active" href="#">-->
+<!--                <i class="far fa-times-circle fa-2x notification-delete"></i>-->
+<!--                <span>New</span>-->
+<!--                <span class="dot notification-undread-count"></span>-->
+<!--              </a>-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--        </nav>-->
+<!--&lt;!&ndash;        End of sidebar&ndash;&gt;-->
+
+<!--&lt;!&ndash;        Right block&ndash;&gt;-->
+<!--        <div class="col-sm-12 col-md-12 col-lg-8">-->
+
+<!--&lt;!&ndash;        Row for messages and form&ndash;&gt;-->
+<!--          <div class="row">-->
+<!--&lt;!&ndash;        Messages block&ndash;&gt;-->
+<!--            <div class="container">-->
+<!--              <div class="col-12 my-1 rounded">-->
+<!--                -->
+<!--              </div>-->
+<!--            </div>-->
+<!--&lt;!&ndash;        End of messages block&ndash;&gt;-->
+
+<!--&lt;!&ndash;        Form block&ndash;&gt;-->
+<!--            <div class = "col-12">-->
+<!--            <form class="form-inline">-->
+<!--              <div class="form-group col-8 m-sm-auto mx-sm-3 mb-2">-->
+<!--                <label class="text-center mr-2" for="messageArea">Enter message</label>-->
+<!--                <textarea class="col-10 form-control-lg bg-light" id="messageArea"></textarea>-->
+<!--              </div>-->
+<!--              <button type="submit" class="col-2 m-sm-auto mx-sm-3 mb-2 mr-2 btn btn-primary" onclick="send()">Send</button>-->
+<!--            </form>-->
+<!--          </div>-->
+<!--&lt;!&ndash;        End of form block&ndash;&gt;-->
+<!--          </div>-->
+<!--&lt;!&ndash;        End of row for messages and form blocks  &ndash;&gt;-->
+<!--        </div>-->
+<!--&lt;!&ndash;        End of right block&ndash;&gt;-->
+<!--        </div>-->
+<!--&lt;!&ndash;        End of row for sidebar and right part&ndash;&gt;-->
+<!--      </div>-->
+<!--&lt;!&ndash;        End of page&ndash;&gt;-->
+<!--    </div>-->
+<!--&lt;!&ndash;        end of the app&ndash;&gt;-->
+<!--</body>-->
+<!--<script type="text/javascript" src="index.js"></script>-->
+<!--</html>-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <title>ChatBot v0.0.1</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <!--  Bootstrap-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <!--  Font Awesome-->
   <script src="https://kit.fontawesome.com/da9cf94c08.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-<!--        The app-->
-  <div id="app" >
 
-<!--        The page-->
-    <div class="container-fluid pt-1 main">
-
-<!--        Row for sidebar and row right part-->
-      <div class="row px-1 mx-1 ">
-<!--        Sidebar-->
-        <nav class="sidebar col-sm-12 col-md-12 col-lg-3 mr-lg-2 bg-light">
-          <span class="">ChatBot</span>
-          <p>v0.0.1</p>
-          <ul class="notification-list nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">
-                <i class="far fa-times-circle fa-2x notification-delete"></i>
-                <span>New</span>
-                <span class="dot notification-undread-count"></span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">
-                <i class="far fa-times-circle fa-2x notification-delete"></i>
-                <span>New</span>
-                <span class="dot notification-undread-count"></span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-<!--        End of sidebar-->
-
-<!--        Right block-->
-        <div class="col-sm-12 col-md-12 col-lg-8">
-
-<!--        Row for messages and form-->
-          <div class="row">
-<!--        Messages block-->
-            <div class="col-12 my-1">
-<!--        Row for table      -->
-              <div class="row">
-                <table class="table table-borderless bg-light col-12">
-                <tbody>
-                <tr>
-                  <th scope="row"></th>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                </tr>
-                <tr>
-                  <th scope="row"></th>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                </tr>
-                <tr>
-                  <th scope="row"></th>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                </tr>
-                </tbody>
-              </table>
-              </div>
-<!--        End of row for table-->
-            </div>
-<!--        End of messages block-->
-
-<!--        Form block-->
-            <div class = "col-12">
-            <form class="form-inline">
-              <div class="form-group col-8 m-sm-auto mx-sm-3 mb-2">
-                <label class="text-center mr-2" for="messageArea">Enter message</label>
-                <textarea class="col-10 form-control-lg" id="messageArea"></textarea>
-              </div>
-              <button type="submit" class="col-2 m-sm-auto mx-sm-3 mb-2 mr-2 btn btn-primary" onclick="send()">Send</button>
-            </form>
-          </div>
-<!--        End of form block-->
-          </div>
-<!--        End of row for messages and form blocks  -->
-        </div>
-<!--        End of right block-->
-        </div>
-<!--        End of row for sidebar and right part-->
-      </div>
-<!--        End of page-->
+<div id="app">
+  <div class="container">
+    <div class="text-center">
+      <span class="display-4 text-center">Chatbot</span>
     </div>
-<!--        end of the app-->
+
+
+    <div class="messaging">
+      <div class="inbox_msg">
+        <div class="inbox_people">
+          <div class="headind_srch">
+            <div class="recent_heading">
+              <h4>Recent</h4>
+            </div>
+            <div class="srch_bar">
+              <div class="stylish-input-group">
+                <label>
+                  <input type="text" class="search-bar" placeholder="Search">
+                </label>
+                <span class="input-group-addon">
+                <button type="button"> <i class="fa fa-search" aria-hidden="true"></i> </button>
+                </span></div>
+            </div>
+          </div>
+          <div class="inbox_chat">
+            <div class="chat_list active_chat">
+              <div class="chat_people">
+                <div class="chat_img"><img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"></div>
+                <div class="chat_ib">
+                  <h5>Sébastien NOBOUR <span class="chat_date">Dec 25</span></h5>
+                  <p>G.</p>
+                </div>
+              </div>
+            </div>
+            <div class="chat_list">
+              <div class="chat_people">
+                <div class="chat_img"><img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"></div>
+                <div class="chat_ib">
+                  <h5>Sébastien NOBOUR <span class="chat_date">Dec 25</span></h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. </p>
+                </div>
+              </div>
+            </div>
+            <div class="chat_list">
+              <div class="chat_people">
+                <div class="chat_img"><img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"></div>
+                <div class="chat_ib">
+                  <h5>Sébastien NOBOUR <span class="chat_date">Dec 25</span></h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. </p>
+                </div>
+              </div>
+            </div>
+            <div class="chat_list">
+              <div class="chat_people">
+                <div class="chat_img"><img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"></div>
+                <div class="chat_ib">
+                  <h5>Sébastien NOBOUR <span class="chat_date">Dec 25</span></h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. </p>
+                </div>
+              </div>
+            </div>
+            <div class="chat_list">
+              <div class="chat_people">
+                <div class="chat_img"><img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"></div>
+                <div class="chat_ib">
+                  <h5>Sébastien NOBOUR <span class="chat_date">Dec 25</span></h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. </p>
+                </div>
+              </div>
+            </div>
+            <div class="chat_list">
+              <div class="chat_people">
+                <div class="chat_img"><img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"></div>
+                <div class="chat_ib">
+                  <h5>Sébastien NOBOUR <span class="chat_date">Dec 25</span></h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. </p>
+                </div>
+              </div>
+            </div>
+            <div class="chat_list">
+              <div class="chat_people">
+                <div class="chat_img"><img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"></div>
+                <div class="chat_ib">
+                  <h5>Sébastien NOBOUR <span class="chat_date">Dec 25</span></h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mesgs">
+          <div class="msg_history">
+            <div class="incoming_msg">
+              <div class="incoming_msg_img"><img src="https://ptetutorials.com/images/user-profile.png" alt="sunil">
+              </div>
+              <div class="received_msg">
+                <div class="received_withd_msg">
+                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                  <span class="time_date"> 11:01 AM    |    June 9</span></div>
+              </div>
+            </div>
+            <div class="outgoing_msg">
+              <div class="sent_msg">
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <span class="time_date"> 11:01 AM    |    June 9</span></div>
+            </div>
+            <div class="incoming_msg">
+              <div class="incoming_msg_img"><img src="https://ptetutorials.com/images/user-profile.png" alt="sunil">
+              </div>
+              <div class="received_msg">
+                <div class="received_withd_msg">
+                  <p>Test, I write random text</p>
+                  <span class="time_date"> 11:01 AM    |    Yesterday</span></div>
+              </div>
+            </div>
+            <div class="outgoing_msg">
+              <div class="sent_msg">
+                <p>My school is in Paris 19th</p>
+                <span class="time_date"> 11:01 AM    |    Today</span></div>
+            </div>
+            <div class="incoming_msg">
+              <div class="incoming_msg_img"><img src="https://ptetutorials.com/images/user-profile.png" alt="sunil">
+              </div>
+              <div class="received_msg">
+                <div class="received_withd_msg">
+                  <p>We work directly with our designers and suppliers,
+                    and sell direct to you, which means quality, exclusive
+                    products, at a price anyone can afford.</p>
+                  <span class="time_date"> 11:01 AM    |    Today</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="type_msg container-fluid">
+            <div class="input_msg_write row">
+              <input type="text" class="col-9 write_msg" placeholder="Type a message"/>
+              <button class="msg_send_btn" type="button">
+                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="index.js"></script>
+</div>
 </body>
-<script type="text/javascript" src="index.js"></script>
 </html>
