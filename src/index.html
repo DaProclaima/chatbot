@@ -16,7 +16,11 @@
   <div id="app" >
 
 <!--        The page-->
+<<<<<<< HEAD
     <div class="container-fluid pt-1 main">
+=======
+    <div class="container-fluid mt-1 pt-1 main">
+>>>>>>> devel
 
 <!--        Row for sidebar and row right part-->
       <div class="row px-1 mx-1 ">
@@ -46,12 +50,48 @@
 <!--        Right block-->
         <div class="col-sm-12 col-md-12 col-lg-8">
 
-<!--        Row for messages and form-->
-          <div class="row">
 <!--        Messages block-->
-            <div class="container">
-              <div class="col-12 my-1 rounded">
+          <div class="container">
+<!--        Row for messages and form-->
+            <div class="row">
+              <div class="col-5 my-1 rounded bg-dark">
+                <div class="message">
+                  <div class="chat_img"><img src="https://ptetutorials.com/images/user-profile.png" alt="sunil">
+                  </div>
+                  <div class="chat_ib">
+                    <h5>Sébastien NOBOUR <span class="chat_date">Dec 25</span></h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                      et dolore magna aliqua. </p>
+                  </div>
+                </div>
 
+                <div class="message">
+                  <div class="chat_img"><img src="https://ptetutorials.com/images/user-profile.png" alt="sunil">
+                  </div>
+                  <div class="chat_ib">
+                    <h5>Sébastien NOBOUR <span class="chat_date">Dec 25</span></h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                      et dolore magna aliqua. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-5 my-1 rounded bg-light">
+                <div class="message">
+                  <div class="chat_img"><img src="https://ptetutorials.com/images/user-profile.png" alt="sunil">
+                  </div>
+                  <div class="chat_ib">
+                    <h5>Bot <span class="chat_date">Dec 25</span></h5>
+                    <p>No lo sé... ?Qué passa? </p>
+                  </div>
+                </div>
+                <div class="message">
+                  <div class="chat_img"><img src="https://ptetutorials.com/images/user-profile.png" alt="sunil">
+                  </div>
+                  <div class="chat_ib">
+                    <h5>BOT <span class="chat_date">Dec 25</span></h5>
+                    <p>Blalala </p>
+                  </div>
+                </div>
               </div>
             </div>
 <!--        End of messages block-->
@@ -61,9 +101,10 @@
             <form class="form-inline">
               <div class="form-group col-8 m-sm-auto mx-sm-3 mb-2">
                 <label class="text-center mr-2" for="messageArea">Enter message</label>
-                <textarea class="col-10 form-control-lg bg-light" id="messageArea"></textarea>
+<!--                <textarea class="form-control-lg bg-light" id="messageArea"></textarea>-->
+                <input type="text" class="form-control-lg bg-light" id="messageArea" name="message">
               </div>
-              <button type="submit" class="col-2 m-sm-auto mx-sm-3 mb-2 mr-2 btn btn-primary" onclick="send()">Send</button>
+              <button type="submit" class="col-2 m-sm-auto mx-sm-3 mb-2 mr-2 btn btn-primary rounded" onclick="send()">Send</button>
             </form>
           </div>
 <!--        End of form block-->
@@ -237,10 +278,10 @@
 <!--          </div>-->
 <!--          <div class="type_msg container-fluid">-->
 <!--            <div class="input_msg_write row">-->
-<!--              <input type="text" class="col-9 chat&#45;&#45;message" placeholder="Type a message"/>-->
-<!--              <button class="msg_send_btn chat&#45;&#45;button" type="button">-->
-<!--              <i class="fa fa-paper-plane-o" aria-hidden="true"></i>-->
-<!--            </button>-->
+<!--              <input type="text" class="col-9 write_msg" placeholder="Type a message"/>-->
+<!--              <button class="msg_send_btn" type="button">-->
+<!--                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>-->
+<!--              </button>-->
 <!--            </div>-->
 <!--          </div>-->
 <!--        </div>-->
